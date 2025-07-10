@@ -1,9 +1,8 @@
-     # Welcome to the Git Basics Course
+# Welcome to the Git Basics Course
 
-     ## Terms
-
-     - Repository
-     - Commit
-     - Branch
-     - Merge
-     - Push
+## Terms
+- Repository
+- Commit
+- Branch
+- Merge
+- Push
