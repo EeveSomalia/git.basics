@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Feedback Form</title>
+    <style>
+        .Personal{
+            display: block;
+            margin: 0.5rem 0;
+        }
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }   
+        legend {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        textarea {
+            width: 100%;
+            max-width: 89vw;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        textarea {
+            width: 100%;
+            max-width: 81vw;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Feedback Form</h1>
+      <p>
+        Thank you for visiting our website. 
+        Please provide feedback on our website. 
+        Your feedback will help us improve our services.
+      </p>
+    </header>
+    <main>
+      <form method="POST" action="https://hotel-feedback.freecodecamp.org">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label class="Personal" for="full-name">Name (required):<input 
+            type="text" 
+            id="full-name" 
+            name="name" 
+            placeholder="Ex. John Doe" 
+            required size="20">
+            </label>
+          
+          <label class="Personal" for="email">Email address (required):<input
+            placeholder="example@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"/></label>
+          
+          <label class="Personal" for="age">Age (optional):<input 
+            type="number" 
+            name="age" 
+            id="age" 
+            min="3" 
+            max="100"/>
+        </label>
+          
+        </fieldset>
+
+        <fieldset>
+          <legend>Was this your first time at our website?</legend>
+          <label for="yes-option"> <input 
+            id="yes-option" 
+            type="radio" 
+            name="hotel-stay" />
+            Yes</label>
+         
+          <label for="no-option"><input 
+            id="no-option" 
+            type="radio" 
+            name="hotel-stay" />
+            No</label>
+          
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Why did you know about our website? (Check all that apply)
+          </legend>
+
+          <label for="ads"><input 
+            type="checkbox" 
+            id="ads" 
+            name="ads" 
+            value="ads" />
+            Social Media Ads</label>
+
+          <label for="recommendation"><input
+            type="checkbox"
+            id="recommendation"
+            name="recommendation"
+            value="recommendation"/>
+            Personal Recommendation</label>
+          
+
+          <label for="location"><input 
+            type="checkbox" 
+            id="location" 
+            name="location" 
+            value="location" />
+            Location</label>
+          
+
+          <label for="reputation"><input
+            checked
+            type="checkbox"
+            id="reputation"
+            name="reputation"
+            value="reputation"/>
+            Reputation</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ratings</legend>
+
+          <label for="service">How was the website?</label>
+
+          <select name="service" id="service">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+
+          <label for="food">How was the content?</label>
+
+          <select name="food" id="food">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+        </fieldset>
+
+        <label for="comments"><b>Other Comments?</b></label>
+        <textarea 
+        cols="30" 
+        rows="10" 
+        name="comments" 
+        id="comments"
+        class="comments"
+        placeholder="Tell us how we can help our website be better...">
+        </textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
