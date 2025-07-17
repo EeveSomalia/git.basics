@@ -21,6 +21,7 @@
   --white: #fff;
 
   /* Font-size family and Line Height */
+  --font-family: Arial, Helvetica, sans-serif;
   --h1-X: bold 4rem/1em var(--font-family);
   --h2-X: bold 3rem/1.2em var(--font-family);
   --h3-X: bold 2.25rem/1.2em var(--font-family);
@@ -35,7 +36,6 @@
   --font-size-large: 1rem/1.6em var(--font-family);
   --font-size-medium: .8rem/1.6em var(--font-family);
   --font-size-small: 0.75rem/1.8em var(--font-family);
-  --font-family: Arial, Helvetica, sans-serif;
 
   /* Margin and Padding */
   --margin-xxs: 0.25rem;
@@ -67,7 +67,7 @@
   padding: 0;
   font-size: var(--font-size-medium);
   font-family: var(--font-family);
-  box-sizing: border-box;
+  box-sizing: border-box;   
 }
 
 /* Whole Structure Positionment */
@@ -134,7 +134,6 @@
   .nav-bar ul {
     margin: 15px -35px;
     list-style: none;
-    display: flex;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
